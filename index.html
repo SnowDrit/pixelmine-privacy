@@ -38,8 +38,12 @@
 
 <h2>1. Какие данные собираем мы сами</h2>
 <p>Приложение не требует регистрации и не имеет собственных серверов. Мы не собираем и не храним
-ваши персональные данные (имя, e-mail, телефон, геолокацию и т.п.). Игровой прогресс сохраняется
-только локально на вашем устройстве и удаляется вместе с удалением Приложения.</p>
+ваши персональные данные (имя, e-mail, телефон, геолокацию и т.п.). Сохранённая игра — мир,
+инвентарь, постройки — хранится только локально на вашем устройстве и удаляется вместе с удалением
+Приложения; нам она не передаётся.</p>
+
+<p>При этом обезличенные сведения о ходе игры (достигнутый уровень, ключевые внутриигровые события)
+передаются в сторонний сервис аналитики — см. раздел 2. Связать их с вашей личностью нельзя.</p>
 
 <h2>2. Сторонние сервисы</h2>
 <p>Для показа рекламы и сбора обезличенной статистики Приложение использует SDK компании Яндекс.
@@ -50,15 +54,16 @@
       язык, страна, параметры экрана, оператор, тип сетевого подключения — Wi-Fi или мобильная сеть),
       данные о показах рекламы и взаимодействии с ней.
       Цели: подбор и показ рекламы, ограничение частоты показов, борьба с мошенничеством.</li>
-  <li><b>Рекламные сети-партнёры</b>, подключённые через механизм медиации Yandex Mobile Ads
-      (в том числе <b>Google Mobile Ads</b>): рекламный идентификатор устройства (GAID / OAID),
-      IP-адрес, сведения об устройстве и данные о показах рекламы.
-      Цели: подбор и показ рекламы, оценка её эффективности.</li>
-  <li><b>AppMetrica</b> (аналитика): обезличенная статистика использования — установки, источник
-      установки (install referrer), сессии, внутриигровые события и игровая статистика (прогресс,
-      уровень), сведения об устройстве и ОС, тип сети и оператор, состояние устройства (уровень
-      заряда, объём свободной памяти), IP-адрес (для определения приблизительного региона),
-      отчёты о сбоях и зависаниях. Цели: статистика, повышение стабильности и качества игры.</li>
+  <li><b>Рекламные сети-партнёры</b>, которые Яндекс может подключать через механизм медиации:
+      рекламный идентификатор устройства (GAID / OAID), IP-адрес, сведения об устройстве и данные
+      о показах рекламы. Цели: подбор и показ рекламы, оценка её эффективности.</li>
+  <li><b>AppMetrica</b> (аналитика): обезличенный идентификатор установки, присваиваемый самим
+      сервисом AppMetrica (не связан с вашим именем или аккаунтом), статистика использования —
+      установки, источник установки (install referrer), сессии, внутриигровые события и игровая
+      статистика (прогресс, уровень), название пакета и версия Приложения, сведения об устройстве
+      и ОС, тип сети и оператор, состояние устройства (уровень заряда, объём свободной памяти),
+      IP-адрес (для определения приблизительного региона), отчёты о сбоях и зависаниях.
+      Цели: статистика, повышение стабильности и качества игры.</li>
 </ul>
 <p>Обработка этих данных регулируется документами Яндекса:
 <a href="https://yandex.ru/legal/confidential/">Политика конфиденциальности Яндекса</a>.
@@ -79,14 +84,36 @@
 Приложение не собирает IMEI, IMSI, MAC-адрес, серийный номер устройства и список установленных
 приложений.</p>
 
-<h2>4. Управление данными и отказ</h2>
+<h2 id="rights">4. Ваши права, основания обработки и сроки хранения</h2>
+
+<p><b>Правовое основание.</b> Приложение распространяется бесплатно и финансируется за счёт рекламы.
+Перечисленные выше данные обрабатываются на основании нашего законного интереса в работе
+Приложения, показе рекламы, обеспечении безопасности и предотвращении мошенничества. Приложение
+не распространяется в странах Европейской экономической зоны, Великобритании и Швейцарии.
+Вы можете в любой момент ограничить обработку средствами операционной системы — см. ниже.</p>
+
+<p><b>Сроки хранения.</b> Мы сами данные не храним. Сроки хранения в сервисах Яндекса определяются
+их собственными политиками; обезличенная статистика хранится не дольше, чем это необходимо для
+указанных выше целей.</p>
+
+<p><b>Ваши права.</b> В отношении обрабатываемых данных вы имеете право на доступ, исправление,
+удаление, ограничение обработки, возражение против обработки, а также на переносимость данных
+и на подачу жалобы в надзорный орган. Для реализации этих прав напишите нам на
+<a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a> — мы ответим в срок, установленный
+применимым законодательством (не позднее 30 дней).</p>
+
+<p><b>Управление данными и отказ:</b></p>
 <ul>
   <li>Вы можете сбросить или удалить рекламный идентификатор: «Настройки → Google → Реклама»
-      (на устройствах Huawei: «Настройки → Конфиденциальность → Реклама и конфиденциальность»).</li>
+      (на устройствах Huawei: «Настройки → Конфиденциальность → Реклама и конфиденциальность»).
+      Там же можно отключить персонализированную рекламу.</li>
   <li>Удаление Приложения полностью удаляет локальные данные (игровой прогресс) с устройства.</li>
   <li>По вопросам, связанным с данными, обрабатываемыми SDK Яндекса, вы также можете обращаться
       к Яндексу по ссылке выше.</li>
 </ul>
+
+<p>Мы не продаём ваши данные и не используем их для принятия автоматизированных решений, влекущих
+юридические последствия.</p>
 
 <h2>5. Дети</h2>
 <p>Приложение адресовано широкой аудитории и не предназначено специально для детей. Мы сознательно
@@ -119,8 +146,12 @@
 
 <h2>1. Data we collect ourselves</h2>
 <p>The App requires no registration and has no servers of its own. We do not collect or store your
-personal data (name, e-mail, phone number, location, etc.). Game progress is stored only locally
-on your device and is removed when you uninstall the App.</p>
+personal data (name, e-mail, phone number, location, etc.). Your saved game — world, inventory,
+buildings — is stored only locally on your device and is removed when you uninstall the App; it is
+never transmitted to us.</p>
+
+<p>However, anonymized information about your progress (level reached, key in-game events) is sent
+to a third-party analytics service — see section 2. It cannot be linked to your identity.</p>
 
 <h2>2. Third-party services</h2>
 <p>The App uses Yandex SDKs to serve ads and collect anonymized statistics. These services may
@@ -130,14 +161,15 @@ automatically receive the following data:</p>
       (GAID / OAID), IP address, device information (model, OS version, language, country, screen
       parameters, carrier, network connection type — Wi-Fi or mobile), ad impression and interaction
       data. Purposes: serving ads, frequency capping, fraud prevention.</li>
-  <li><b>Partner ad networks</b> connected through Yandex Mobile Ads mediation (including
-      <b>Google Mobile Ads</b>): device advertising identifier (GAID / OAID), IP address, device
-      information and ad impression data. Purposes: serving ads, measuring ad performance.</li>
-  <li><b>AppMetrica</b> (analytics): anonymized usage statistics — installs, install referrer,
-      sessions, in-game events and game statistics (progress, level), device and OS information,
-      network type and carrier, device status (battery level, free storage), IP address (approximate
-      region), crash and ANR reports. Purposes: statistics, improving stability and quality of the
-      game.</li>
+  <li><b>Partner ad networks</b> that Yandex may connect through its mediation mechanism: device
+      advertising identifier (GAID / OAID), IP address, device information and ad impression data.
+      Purposes: serving ads, measuring ad performance.</li>
+  <li><b>AppMetrica</b> (analytics): an anonymized installation identifier generated by AppMetrica
+      itself (not linked to your name or any account), usage statistics — installs, install referrer,
+      sessions, in-game events and game statistics (progress, level), App package name and version,
+      device and OS information, network type and carrier, device status (battery level, free
+      storage), IP address (approximate region), crash and ANR reports. Purposes: statistics,
+      improving stability and quality of the game.</li>
 </ul>
 <p>Processing of this data is governed by Yandex documents:
 <a href="https://yandex.com/legal/confidential/">Yandex Privacy Policy</a>.
@@ -158,13 +190,35 @@ country of residence.</p>
 The App does not collect IMEI, IMSI, MAC address, device serial number, or the list of installed
 applications.</p>
 
-<h2>4. Your choices</h2>
+<h2 id="rights-en">4. Your rights, legal basis and retention</h2>
+
+<p><b>Legal basis.</b> The App is distributed free of charge and funded by advertising. The data
+listed above is processed on the basis of our legitimate interest in operating the App, serving
+ads, ensuring security and preventing fraud. The App is not distributed in the European Economic
+Area, the United Kingdom or Switzerland. You may restrict processing at any time through your
+operating system settings — see below.</p>
+
+<p><b>Retention.</b> We do not store any data ourselves. Retention periods within Yandex services
+are governed by their own policies; anonymized statistics are kept no longer than necessary for the
+purposes stated above.</p>
+
+<p><b>Your rights.</b> You have the right to access, rectify, erase, restrict or object to the
+processing of your data, the right to data portability, and the right to lodge a complaint with a
+supervisory authority. To exercise these rights, write to
+<a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a> — we will respond within the period
+required by applicable law (no later than 30 days).</p>
+
+<p><b>Managing your data and opting out:</b></p>
 <ul>
   <li>You can reset or delete your advertising identifier: “Settings → Google → Ads”
-      (on Huawei devices: “Settings → Privacy → Ads and privacy”).</li>
+      (on Huawei devices: “Settings → Privacy → Ads and privacy”). Personalized advertising can be
+      turned off in the same place.</li>
   <li>Uninstalling the App completely removes local data (game progress) from your device.</li>
   <li>For questions about data processed by Yandex SDKs you may also contact Yandex via the link above.</li>
 </ul>
+
+<p>We do not sell your data and do not use it for automated decision-making that produces legal
+effects.</p>
 
 <h2>5. Children</h2>
 <p>The App is intended for a general audience and is not directed specifically at children.
