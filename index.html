@@ -26,7 +26,7 @@
 <!-- ======================= RU ======================= -->
 <section id="ru">
 <h1>Политика конфиденциальности</h1>
-<p class="meta">Дата вступления в силу: 15 июля 2026 г. · Последнее обновление: 15 июля 2026 г.</p>
+<p class="meta">Дата вступления в силу: 15 июля 2026 г. · Последнее обновление: 21 июля 2026 г.</p>
 
 <p>Настоящая Политика описывает, какие данные обрабатываются при использовании мобильных игр
 разработчика <b>Артюхин Матфей Андреевич</b> (далее — «мы», «Приложение»):</p>
@@ -47,22 +47,37 @@
 <ul>
   <li><b>Yandex Mobile Ads</b> (показ рекламы, в т.ч. рекламы за вознаграждение): рекламный
       идентификатор устройства (GAID / OAID), IP-адрес, сведения об устройстве (модель, версия ОС,
-      язык, параметры экрана, оператор/тип сети), данные о показах рекламы и взаимодействии с ней.
+      язык, страна, параметры экрана, оператор, тип сетевого подключения — Wi-Fi или мобильная сеть),
+      данные о показах рекламы и взаимодействии с ней.
       Цели: подбор и показ рекламы, ограничение частоты показов, борьба с мошенничеством.</li>
-  <li><b>AppMetrica</b> (аналитика): обезличенная статистика использования — установки, сессии,
-      внутриигровые события, сведения об устройстве и ОС, IP-адрес (для определения приблизительного
-      региона), отчёты о сбоях. Цели: статистика, повышение стабильности и качества игры.</li>
+  <li><b>Рекламные сети-партнёры</b>, подключённые через механизм медиации Yandex Mobile Ads
+      (в том числе <b>Google Mobile Ads</b>): рекламный идентификатор устройства (GAID / OAID),
+      IP-адрес, сведения об устройстве и данные о показах рекламы.
+      Цели: подбор и показ рекламы, оценка её эффективности.</li>
+  <li><b>AppMetrica</b> (аналитика): обезличенная статистика использования — установки, источник
+      установки (install referrer), сессии, внутриигровые события и игровая статистика (прогресс,
+      уровень), сведения об устройстве и ОС, тип сети и оператор, состояние устройства (уровень
+      заряда, объём свободной памяти), IP-адрес (для определения приблизительного региона),
+      отчёты о сбоях и зависаниях. Цели: статистика, повышение стабильности и качества игры.</li>
 </ul>
 <p>Обработка этих данных регулируется документами Яндекса:
 <a href="https://yandex.ru/legal/confidential/">Политика конфиденциальности Яндекса</a>.
-Данные могут обрабатываться на серверах на территории Российской Федерации.</p>
+Данные могут обрабатываться на серверах на территории Российской Федерации, то есть передаваться
+за пределы страны вашего проживания.</p>
 
 <h2>3. Разрешения Приложения</h2>
 <ul>
   <li><code>INTERNET</code> — загрузка рекламы и отправка обезличенной статистики;</li>
-  <li><code>ACCESS_NETWORK_STATE</code> — проверка наличия сети перед загрузкой рекламы.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — проверка наличия сети перед загрузкой рекламы;</li>
+  <li><code>ACCESS_WIFI_STATE</code> — определение типа подключения (Wi-Fi или мобильная сеть);</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — доступ к рекламному идентификатору
+      устройства для показа рекламы;</li>
+  <li><code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> —
+      получение обезличенных сведений об источнике установки Приложения.</li>
 </ul>
-<p>Приложение не запрашивает доступ к камере, микрофону, контактам, файлам или геолокации.</p>
+<p>Приложение не запрашивает доступ к камере, микрофону, контактам, файлам или геолокации.
+Приложение не собирает IMEI, IMSI, MAC-адрес, серийный номер устройства и список установленных
+приложений.</p>
 
 <h2>4. Управление данными и отказ</h2>
 <ul>
@@ -83,7 +98,8 @@
 дата последнего обновления указана вверху страницы.</p>
 
 <h2>7. Контакты</h2>
-<p>Разработчик: Артюхин Матфей Андреевич · E-mail: <a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></p>
+<p>Разработчик: Артюхин Матфей Андреевич · E-mail:
+<a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></p>
 </section>
 
 <hr class="split">
@@ -91,7 +107,7 @@
 <!-- ======================= EN ======================= -->
 <section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: July 15, 2026 · Last updated: July 15, 2026</p>
+<p class="meta">Effective date: July 15, 2026 · Last updated: July 21, 2026</p>
 
 <p>This Policy describes what data is processed when you use the mobile games developed by
 <b>Artiukhin Matfei Andreevich</b> (“we”, the “App”):</p>
@@ -111,23 +127,36 @@ on your device and is removed when you uninstall the App.</p>
 automatically receive the following data:</p>
 <ul>
   <li><b>Yandex Mobile Ads</b> (ad serving, incl. rewarded ads): device advertising identifier
-      (GAID / OAID), IP address, device information (model, OS version, language, screen parameters,
-      carrier/network type), ad impression and interaction data. Purposes: serving ads, frequency
-      capping, fraud prevention.</li>
-  <li><b>AppMetrica</b> (analytics): anonymized usage statistics — installs, sessions, in-game
-      events, device and OS information, IP address (approximate region), crash reports.
-      Purposes: statistics, improving stability and quality of the game.</li>
+      (GAID / OAID), IP address, device information (model, OS version, language, country, screen
+      parameters, carrier, network connection type — Wi-Fi or mobile), ad impression and interaction
+      data. Purposes: serving ads, frequency capping, fraud prevention.</li>
+  <li><b>Partner ad networks</b> connected through Yandex Mobile Ads mediation (including
+      <b>Google Mobile Ads</b>): device advertising identifier (GAID / OAID), IP address, device
+      information and ad impression data. Purposes: serving ads, measuring ad performance.</li>
+  <li><b>AppMetrica</b> (analytics): anonymized usage statistics — installs, install referrer,
+      sessions, in-game events and game statistics (progress, level), device and OS information,
+      network type and carrier, device status (battery level, free storage), IP address (approximate
+      region), crash and ANR reports. Purposes: statistics, improving stability and quality of the
+      game.</li>
 </ul>
 <p>Processing of this data is governed by Yandex documents:
 <a href="https://yandex.com/legal/confidential/">Yandex Privacy Policy</a>.
-Data may be processed on servers located in the Russian Federation.</p>
+Data may be processed on servers located in the Russian Federation, i.e. transferred outside your
+country of residence.</p>
 
 <h2>3. App permissions</h2>
 <ul>
   <li><code>INTERNET</code> — loading ads and sending anonymized statistics;</li>
-  <li><code>ACCESS_NETWORK_STATE</code> — checking network availability before loading ads.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — checking network availability before loading ads;</li>
+  <li><code>ACCESS_WIFI_STATE</code> — detecting the connection type (Wi-Fi or mobile network);</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — accessing the device advertising
+      identifier to serve ads;</li>
+  <li><code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> —
+      obtaining anonymized information about the App's install source.</li>
 </ul>
-<p>The App does not request access to your camera, microphone, contacts, files, or location.</p>
+<p>The App does not request access to your camera, microphone, contacts, files, or location.
+The App does not collect IMEI, IMSI, MAC address, device serial number, or the list of installed
+applications.</p>
 
 <h2>4. Your choices</h2>
 <ul>
@@ -147,7 +176,8 @@ with personal data, please contact us and we will take appropriate action.</p>
 address; the date of the latest update is shown at the top of the page.</p>
 
 <h2>7. Contact</h2>
-<p>Developer: Artiukhin Matfei Andreevich · E-mail: <a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></p>
+<p>Developer: Artiukhin Matfei Andreevich · E-mail:
+<a href="mailto:SnowDrit@yandex.ru">SnowDrit@yandex.ru</a></p>
 </section>
 
 </body>
